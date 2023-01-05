@@ -8,4 +8,10 @@ const Button = ({ color, text }) => {
   );
 };
 
-export default Button;
+const RouteButton = ({color, text, onClick}) => {
+  return<>
+  <input type="button" className={`btn btn-${color}`} value={text} onClick={onClick}/>
+  </>
+}
+
+export {Button, RouteButton};
